@@ -1,0 +1,153 @@
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap: 1.5em;
+}
+
+.main-image {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+.main-image img {
+    width: 100%;
+}
+
+.side-bar {
+    grid-column: 3;
+    grid-row: 2 / span 2;
+    background-color: var(--primary-color);
+    padding: 1.2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.side-bar h1 {
+    color: var(--header-color);
+}
+
+.side-bar .subtitle {
+    margin: auto auto 0 0;
+    color: var(--primary-text-color);
+}
+
+.side-bar .text {
+    color: var(--secondary-text-color);
+}
+
+.side-bar .separator {
+    width: 100%;
+}
+
+.side-bar hr {
+    border-color: var(--secondary-text-color);
+}
+
+.main-text {
+    grid-column: 1;
+    grid-row: 3;
+    color: var(--title-text-color);
+}
+
+.main-text h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.description {
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description>p {
+    line-height: 22px;
+}
+
+.description button {
+    display: flex;
+    background-color: var(--button-color);
+    color: var(--primary-text-color);
+    border: 0;
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.description button:hover {
+    background-color: var(--primary-color);
+}
+
+.padding {
+    grid-row: 4;
+    height: 6vh;
+}
+
+.card {
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1em;
+}
+
+.card .image img {
+    height: 10em;
+    width: auto;
+}
+
+.card-description {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-description .subtitle {
+    color: var(--title-text-color);
+    margin-bottom: 0;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.card-description .subtitle:hover {
+    color: var(--button-color);
+}
+
+.gray-text {
+    color: var(--secondary-text-color);
+}
+
+.card-number {
+    margin-top: 0;
+    margin-block-end: 0.4em;
+    opacity: 0.5;
+}
+
+#c1 {
+    grid-column: 1;
+}
+
+#c2 {
+    grid-column: 2;
+}
+
+#c3 {
+    grid-column: 3;
+}
+
+.attribution {
+    margin-top: 2em;
+}
+
+p {
+    font-size: 15px;
+}

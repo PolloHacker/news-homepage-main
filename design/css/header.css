@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    --primary-color: hsl(240, 100%, 5%);
+    --accent-color: hsl(5, 85%, 63%);
+    --button-color: hsl(5, 85%, 63%);
+
+
+    --header-color: hsl(35, 77%, 62%);
+    --title-text-color: hsl(240, 100%, 5%);
+    --primary-text-color: hsl(36, 100%, 99%);
+    --secondary-text-color: hsl(236, 13%, 42%);
+}
+
+body {
+    width: 80%;
+    margin: auto;
+}
+
+.header-container {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.navigation-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-link {
+    float: left;
+    padding: 16px;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+}
