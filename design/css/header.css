@@ -9,6 +9,7 @@
     --title-text-color: hsl(240, 100%, 5%);
     --primary-text-color: hsl(36, 100%, 99%);
     --secondary-text-color: hsl(236, 13%, 42%);
+    --secondary-text-color-light: hsl(233, 8%, 79%);
 }
 
 body {

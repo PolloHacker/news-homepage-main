@@ -36,7 +36,8 @@
 }
 
 .side-bar .text {
-    color: var(--secondary-text-color);
+    color: var(--secondary-text-color-light);
+    opacity: 0.7;
 }
 
 .side-bar .separator {
@@ -65,10 +66,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.description>p {
-    line-height: 22px;
 }
 
 .description button {
@@ -100,7 +97,7 @@
 }
 
 .card .image img {
-    height: 10em;
+    height: 9em;
     width: auto;
 }
 
@@ -120,6 +117,10 @@
 
 .card-description .subtitle:hover {
     color: var(--button-color);
+}
+
+.card-description p {
+    margin-bottom: 0;
 }
 
 .gray-text {
@@ -150,4 +151,5 @@
 
 p {
     font-size: 15px;
+    line-height: 22px;
 }
